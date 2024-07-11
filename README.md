@@ -10,14 +10,14 @@ The AI Nutrition App is designed to offer a seamless user experience for obtaini
 
 - **Image Upload**: Users can upload images of their meals.
 - **Prompt Input**: Users can provide specific prompts for detailed nutritional queries (default prompt: "Calculate the amount of calories").
-- **AI Analysis**: Utilizes the Gemini 1.5 Flash model for backend processing to analyze the food image and provide nutritional information.
+- **AI Analysis**: Utilizes the Gemini 1.5 Pro model for backend processing to analyze the food image and provide nutritional information.
 - **Streamlit Frontend**: Simple and intuitive user interface built with Streamlit.
 
 ## Technologies Used
 
 - **Python**: Core programming language.
 - **Streamlit**: Frontend framework for creating an interactive web application.
-- **Gemini 1.5 Flash Model**: AI model for handling backend image processing and nutritional analysis.
+- **Gemini 1.5 Pro Model**: AI model for handling backend image processing and nutritional analysis.
 
 ## Installation
 

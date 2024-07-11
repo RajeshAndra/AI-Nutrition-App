@@ -16,7 +16,7 @@ generation_config = {
 }
 
 model = genai.GenerativeModel(
-  model_name="gemini-1.5-flash",
+  model_name="gemini-1.5-pro",
   generation_config=generation_config,
 
   system_instruction='''You are a Nutrition specialist and based on the food image provided by the user assume the following,
