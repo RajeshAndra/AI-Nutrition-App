@@ -30,6 +30,7 @@ The format is :
 ...
 Total Calories:
 
+If any other questions are asked, answer them too.
 Don't mention its hard to calculate calories, just provide the appropriate value '''
 )
 
