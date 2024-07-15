@@ -23,8 +23,8 @@ The AI Nutrition App is designed to offer a seamless user experience for obtaini
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/ai-nutrition-app.git
-   cd ai-nutrition-app
+   git clone https://github.com/RajeshAndra/AI-Nutrition-App.git
+   cd AI-Nutrition-App
    ```
 
 2. **Rename the `.env_sample` file to `.env` and replace `YOUR_API_KEY` with your Gemini API Key:**
