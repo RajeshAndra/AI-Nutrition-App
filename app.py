@@ -34,17 +34,26 @@ If any other questions/suggestions were asked, answer them too.
 Don't mention its hard to calculate calories, just provide the appropriate value '''
 )
 
+def get_gemini_response(img,prompt):
+   response = model.generate_content([img,prompt])
+   return response.text
+
+def get_file(uploaded_file):
+  if uploaded_file:
+    img=Image.open(uploaded_file)
+    return img
+  else:
+     raise FileNotFoundError("No File uploaded!")
+
 st.set_page_config("AI Nutrition App")
 st.title("AI Nutrition App")
 
 prompt=st.text_input('Enter the Prompt','Calculate the amount of calories')
 uploaded_file = st.file_uploader("Choose a file")
-if uploaded_file:
-    img=Image.open(uploaded_file)
 
 btn=st.button('Submit')
 if btn:
+    img=get_file(uploaded_file)
     width, height = img.size
     st.image(img.resize((int(width*0.6), int(height*0.6))))
-    response = model.generate_content([img,prompt])
-    st.write(response.text)
+    st.write(get_gemini_response(img,prompt))
